@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Adseo CRM",
@@ -12,7 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="no">
       <body>
         <Sidebar />
-        <div className="main-content">
+        <Header />
+        <div className="main-content" style={{ paddingTop: 56 }}>
           {children}
         </div>
       </body>
