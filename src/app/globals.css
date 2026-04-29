@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  background: #f8f9fa;
+  color: #1a1a2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.sidebar { width: 220px; min-height: 100vh; background: white; border-right: 1px solid #e5e7eb; position: fixed; top: 0; left: 0; z-index: 40; display: flex; flex-direction: column; }
+.main-content { margin-left: 220px; min-height: 100vh; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 8px; font-size: 14px; color: #6b7280; transition: all 0.15s; cursor: pointer; text-decoration: none; margin: 1px 8px; }
+.nav-item:hover { background: #f3f4f6; color: #1a1a2e; }
+.nav-item.active { background: #ede9fe; color: #7c3aed; font-weight: 500; }
+.stat-card { background: white; border-radius: 12px; padding: 20px 24px; border: 1px solid #e5e7eb; }
+.badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; }
+.badge-red { background: #fee2e2; color: #dc2626; }
+.badge-yellow { background: #fef9c3; color: #ca8a04; }
+.badge-green { background: #dcfce7; color: #16a34a; }
+.badge-blue { background: #dbeafe; color: #2563eb; }
+.badge-purple { background: #ede9fe; color: #7c3aed; }
+.badge-gray { background: #f3f4f6; color: #6b7280; }
+.badge-orange { background: #ffedd5; color: #ea580c; }
+.btn-primary { background: #7c3aed; color: white; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 500; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s; }
+.btn-primary:hover { background: #6d28d9; }
+.btn-secondary { background: white; color: #374151; padding: 8px 16px; border-radius: 8px; font-size: 14px; border: 1px solid #e5e7eb; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.progress-bar { height: 4px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; background: #7c3aed; border-radius: 999px; }
+.kanban-col { min-width: 200px; flex: 1; background: #f9fafb; border-radius: 12px; padding: 12px; }
+.kanban-card { background: white; border-radius: 10px; padding: 14px; border: 1px solid #e5e7eb; margin-bottom: 10px; cursor: pointer; transition: box-shadow 0.15s; }
+.kanban-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: white; flex-shrink: 0; }
+.tab-list { display: flex; border-bottom: 1px solid #e5e7eb; }
+.tab { padding: 10px 20px; font-size: 14px; color: #6b7280; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
+.tab:hover { color: #374151; }
+.tab.active { color: #7c3aed; border-bottom-color: #7c3aed; font-weight: 500; }
